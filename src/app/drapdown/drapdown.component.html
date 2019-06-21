@@ -1,0 +1,84 @@
+<div class="container">
+  <h4>EMPLOYEE REGISTRATION</h4>
+  <form [formGroup]="createDrapdownForm">
+<mat-form-field>
+   <input matInput placeholder="Firstname" formControlName="firstName">
+ </mat-form-field>
+ <br>
+ <mat-form-field>
+    <input matInput placeholder="Lastname" formControlName="lastName">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput placeholder="Email" formControlName="email">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+      <input matInput placeholder="MobileNumber" formControlName="mobilenumber">
+    </mat-form-field>
+    <br>
+ <mat-form-field>
+  <input matInput placeholder="select country" formControlName=form-group>
+  <mat-select>
+<!-- <mat-option *ngFor="let country of countrylist" index="value";>{{country}}</mat-option> -->
+  <mat-option value="india">India</mat-option>
+  <mat-option value="uk">UK</mat-option>
+  <mat-option value="us">US</mat-option>
+  <mat-option value="ch">Chaina</mat-option>
+  <mat-option value="kr">Korea</mat-option>
+  </mat-select>
+</mat-form-field>
+<br>
+  <mat-form-field>
+  <input matInput placeholder="Academic percentage" formControlName="percentage">
+  <mat-select>
+    <mat-option value="%">90-80</mat-option>
+    <mat-option value="%">80-70</mat-option>
+    <mat-option value="%">70-60</mat-option>
+  </mat-select>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+      <input matInput placeholder="Hobbies" formControlName="hobbies">
+      <mat-checkbox>Listening music</mat-checkbox>
+      <mat-checkbox>Watching TV</mat-checkbox>
+      <mat-checkbox>Playing Games</mat-checkbox>
+      <mat-checkbox>Reading books</mat-checkbox>
+      </mat-form-field>
+      <br>
+  <mat-radio-group aria-label="Gender">
+      <label>Gender :</label>
+      <mat-radio-button value="F">Female</mat-radio-button>
+      <mat-radio-button value="M">Male</mat-radio-button>
+    </mat-radio-group>
+    <br>
+<button mat-raised-button>submit</button>
+
+
+
+
+
+<!-- <div class="create-drapdown">
+    <h2>COUNTRY DETAILS</h2>
+        <form [formGroup]="createDrapdownForm">
+          <div class="form-group">
+            <select formControlName="country" class="form-control" (change)="onChangeCountry($event.target.value)">
+              <option value="">Select country</option>
+              <option *ngFor="let country of Countries" [value]="country.id">{{country.country_name}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select formControlName="state" class="form-control" (change)="onChangeState($event.target.value)">
+              <option value="">Select state</option>
+              <option *ngFor="let state of States" [value]="state.id">{{state.states_name}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select formControlName="city" class="form-control">
+              <option value="">Select city</option>
+              <option *ngFor="let city of Cities" [value]="city.id">{{city.cities_name}}</option>
+            </select>
+          </div>
+        </form>
+      </div> -->
+    

@@ -1,0 +1,19 @@
+ div{
+    border :2px solid black;
+    text-align: center;
+    width:40%;
+    height:550px;
+    margin-bottom: 100px;
+    margin:auto;
+}
+mat-radio-button{
+           margin-left: 16px;
+           margin-top: 20px;
+           
+}
+button{
+    margin-top: 20px;
+}
+
+
+
